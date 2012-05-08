@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, MainMenuActivity!</string>
-    <string name="app_name">TheVoid</string>
+    <string name="app_name">The Void</string>
+    <string name="please_wait">Please Wait</string>
 </resources>

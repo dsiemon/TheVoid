@@ -19,8 +19,7 @@ public class VoidActivity extends ScaleActivity {
 
 	@Override
 	protected Game createGame() {
-		// TODO Auto-generated method stub
-		return null;
+		return new VoidGame();
 	}
 
 	@Override
@@ -33,7 +32,7 @@ public class VoidActivity extends ScaleActivity {
 	protected void handleResume() {
 		// TODO Auto-generated method stub
 
-	}
+	} 
 
 	@Override
 	protected boolean onMenuButton(int keyCode, KeyEvent event) {

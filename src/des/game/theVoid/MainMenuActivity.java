@@ -26,7 +26,7 @@ public class MainMenuActivity extends Activity {
     private View.OnClickListener sQuickPlayButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
             if (!mPaused) {
-            	Intent i = new Intent(getBaseContext(), null);
+            	Intent i = new Intent(getBaseContext(), VoidActivity.class);
                 v.startAnimation(mButtonFlickerAnimation);
                 mButtonFlickerAnimation.setAnimationListener(new StartActivityAfterAnimation(i));
                 mPaused = true;
@@ -37,7 +37,7 @@ public class MainMenuActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.main_menu);
         
         mPaused = true;
         mJustCreated = true;
