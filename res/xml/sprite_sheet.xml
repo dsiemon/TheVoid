@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <image width="256" height="256">
-<coordinates name="explosion_large1" x="0"  y="0"    width="64"  height="64"/> 
-<coordinates name="explosion_large2" x="64"  y="0"    width="64"  height="64"/> 
-<coordinates name="explosion_large3" x="0"  y="64"    width="64"  height="64"/> 
-<coordinates name="explosion_large4" x="64"  y="64"    width="64"  height="64"/> 
-<coordinates name="explosion_large5" x="128"  y="0"    width="64"  height="64"/> 
-<coordinates name="explosion_large6" x="128"  y="64"    width="64"  height="64"/> 
-<coordinates name="turret_auto_cannon_attack1" x="192"  y="0"    width="64"  height="64"/> 
-<coordinates name="turret_auto_cannon_attack2" x="192"  y="64"    width="64"  height="64"/> 
-<coordinates name="turret_auto_cannon1" x="0"  y="128"    width="64"  height="64"/> 
-<coordinates name="turret_auto_cannon2" x="0"  y="192"    width="64"  height="64"/> 
-<coordinates name="turret_auto_cannon3" x="64"  y="128"    width="64"  height="64"/> 
-<coordinates name="turret_basic_bottom1" x="128"  y="128"    width="64"  height="64"/> 
-<coordinates name="turret_light_gun1" x="64"  y="192"    width="64"  height="64"/> 
-<coordinates name="turret_light_gun2" x="128"  y="192"    width="64"  height="64"/> 
-<coordinates name="spindle1" x="192"  y="128"    width="32"  height="32"/> 
-<coordinates name="spindle2" x="192"  y="160"    width="32"  height="32"/> 
-<coordinates name="spindle3" x="224"  y="128"    width="32"  height="32"/> 
-<coordinates name="spindle4" x="224"  y="160"    width="32"  height="32"/> 
-<coordinates name="rocket1" x="192"  y="192"    width="16"  height="16"/> 
-<coordinates name="rocket2" x="192"  y="208"    width="16"  height="16"/> 
-<coordinates name="rocket3" x="208"  y="192"    width="16"  height="16"/> 
-<coordinates name="wave_bullet1" x="192"  y="224"    width="16"  height="16"/> 
-<coordinates name="auto_bullet1" x="224"  y="192"    width="4"  height="4"/> 
-<coordinates name="light_bullet1" x="208"  y="208"    width="4"  height="4"/> 
+<coordinates name="ball1" x="0"  y="0"    width="32"  height="32"/> 
+<coordinates name="ball2" x="32"  y="0"    width="32"  height="32"/> 
+<coordinates name="player_down_idle1" x="0"  y="32"    width="32"  height="32"/> 
+<coordinates name="player_down_knockback1" x="32"  y="32"    width="32"  height="32"/> 
+<coordinates name="player_down_walking1" x="64"  y="0"    width="32"  height="32"/> 
+<coordinates name="player_down_walking2" x="64"  y="32"    width="32"  height="32"/> 
+<coordinates name="player_left_idle1" x="96"  y="0"    width="32"  height="32"/> 
+<coordinates name="player_left_knockbackFrame1" x="96"  y="32"    width="32"  height="32"/> 
+<coordinates name="player_left_walking1" x="0"  y="64"    width="32"  height="32"/> 
+<coordinates name="player_left_walking2" x="0"  y="96"    width="32"  height="32"/> 
+<coordinates name="player_right_idle1" x="32"  y="64"    width="32"  height="32"/> 
+<coordinates name="player_right_knockback1" x="64"  y="64"    width="32"  height="32"/> 
+<coordinates name="player_right_walking1" x="32"  y="96"    width="32"  height="32"/> 
+<coordinates name="player_right_walking2" x="64"  y="96"    width="32"  height="32"/> 
+<coordinates name="player_up_idle1" x="96"  y="64"    width="32"  height="32"/> 
+<coordinates name="player_up_knockback1" x="96"  y="96"    width="32"  height="32"/> 
+<coordinates name="player_up_walking1" x="128"  y="0"    width="32"  height="32"/> 
+<coordinates name="player_up_walking2" x="160"  y="0"    width="32"  height="32"/> 
 </image>
