@@ -81,28 +81,48 @@ public TiledWorld mapTiles;
         this.mBackgroundObject = builder.mBackgroundObject;
         this.mForegroundObject = builder.mForegroundObject;
 
-        if(BaseObject.sSystemRegistry.cameraTarget != null){
+
+    	
+    	final VoidObjectFactory factory = VoidObjectRegistry.gameObjectFactory;
+/*////////////////////////////////////////////////////////////////////////////////*/
+    	for(int i = 0; i < 4; i++){
+    		for(int j = 0; j < 3; j++){
+    			int orientation = 1;
+    			if(j == 1){
+    				orientation = -1;
+    			}
+    			BaseObject.sSystemRegistry.gameObjectManager.add(factory.spawnBall(500 + i*38, 500 + j*38, orientation, 300f));
+        	}
+    	}
+    	for(int i = 0; i < 7; i++){
+    		for(int j = 0; j < 7; j++){
+
+    			//BaseObject.sSystemRegistry.gameObjectManager.add(factory.spawnOctorok(100 + i*70, 100 + j*70));
+        	}
+    	}
+    	for(int i = 0; i < 1; i++){
+    		for(int j = 0; j < 1; j++){
+
+    			//BaseObject.sSystemRegistry.gameObjectManager.add(factory.spawnPigMan(620 + i*70, 100 + j*70));
+        	}
+    	}
+    	GameObject player = factory.spawnPlayer(300, 300, 0, 200);
+    	BaseObject.sSystemRegistry.gameObjectManager.add(player);
+    	BaseObject.sSystemRegistry.cameraTarget = player;
+    	BaseObject.sSystemRegistry.cameraSystem.setTarget(player);
+    	
+    	
+    	BaseObject.sSystemRegistry.gameObjectManager.add(factory.spawnSpawner(64, 1472, VoidObjectFactory.GameObjectType.PIGMAN, 30f, 3f, false, false, false, true, false));
+    	BaseObject.sSystemRegistry.gameObjectManager.add(factory.spawnSpawner(1504, 1472, VoidObjectFactory.GameObjectType.OCTOROK, 30f, 3f, false, true, false, false, false));
+/*////////////////////////////////////////////////////////////////////////////////*/
+        /*if(BaseObject.sSystemRegistry.cameraTarget != null){
         	BaseObject.sSystemRegistry.gameObjectFactory.destroy(BaseObject.sSystemRegistry.cameraTarget);
         }
         
     	final GameObject target = VoidObjectRegistry.gameObjectFactory.spawnCameraTarget(100, 100);
     	BaseObject.sSystemRegistry.cameraTarget = target;
     	BaseObject.sSystemRegistry.cameraSystem.setTarget(target);
-    	BaseObject.sSystemRegistry.gameObjectManager.add(target);
-    	
-    	final VoidObjectFactory factory = VoidObjectRegistry.gameObjectFactory;
-    	
-    	for(int i = 0; i < 20; i++){
-    		for(int j = 0; j < 4; j++){
-    			int orientation = 1;
-    			if(j == 1){
-    				orientation = -1;
-    			}
-    			BaseObject.sSystemRegistry.gameObjectManager.add(factory.spawnBall(100 + i*38, 100 + j*38, orientation, 400));
-        	}
-    	}
-
-    	
+    	BaseObject.sSystemRegistry.gameObjectManager.add(target);*/
 		return success;
 	}
 	
