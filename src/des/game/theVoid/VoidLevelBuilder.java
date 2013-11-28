@@ -80,7 +80,7 @@ public class VoidLevelBuilder {
 
 		bottomMapTiles.calculateSkips();
 		
-		addTileMapLayer(mBackgroundObject, SortConstants.BOTTOM_TILE_LAYER, 1.0f, mTileWidth * mWidthInTiles, mTileHeight * mHeightInTiles, 
+		addTileMapLayer(mBackgroundObject, SortConstants.BOTTOM_TILE_LAYER, 1.0f, params.gameWidth, params.gameHeight, 
 					    mTileWidth, mTileHeight, bottomMapTiles, bottomTileLayerId, bottomTileColorR, bottomTileColorG, bottomTileColorB, bottomTileColorA);
 		
 		// read in the top tile layer
